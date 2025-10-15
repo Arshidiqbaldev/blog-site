@@ -313,7 +313,11 @@ header a:hover {
     gap:8px;
 }
 
-
+textarea {
+    background: var(--black);
+    border: var(--border);
+    border-radius: var(--border-radius);
+}
 
 .contact{
      width: 90%;
@@ -330,11 +334,12 @@ header a:hover {
 
 
 
-label, input, input::placeholder {
+label, input,textarea, input::placeholder {
     font-size: 14px;
     font-family: var(--font);
     text-transform: capitalize;
     color:var(--white-2);
+    padding: 0.5rem;
    
 }
 
