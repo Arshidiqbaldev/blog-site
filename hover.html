@@ -39,26 +39,22 @@
 
       .no1{
 
-        animation: widthis 0.5s ease-out 0s normal;
+        animation: widthis 2s ease-in-out 0s normal;
         animation-fill-mode:backwards;
         
         
       }
 
       @keyframes widthis {
-
-        from{
-            
-            flex:4;
+0% {
+          flex: 1;
         }
-
-        to {
-            
-            flex:1;
-            
+        50% {
+          flex: 4;
         }
-
-
+        100% {
+          flex: 1;
+        }
 
       }
 
