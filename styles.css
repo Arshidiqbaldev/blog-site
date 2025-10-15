@@ -313,11 +313,7 @@ header a:hover {
     gap:8px;
 }
 
-textarea {
-    background: var(--black);
-    border: var(--border);
-    border-radius: var(--border-radius);
-}
+
 
 .contact{
      width: 90%;
@@ -334,7 +330,7 @@ textarea {
 
 
 
-label, input,textarea, input::placeholder {
+label, input, textarea, input::placeholder {
     font-size: 14px;
     font-family: var(--font);
     text-transform: capitalize;
@@ -369,7 +365,29 @@ input:focus{
     /* border-color: royalblue; */
 }
 
+.message{
+    background: var(--black);
+    border: var(--border);
+    border-radius: var(--border-radius);
+}
 
+.message:focus{
+
+    border-color: rgb(129, 129, 129);
+
+}
+
+
+input:focus:valid{
+    box-shadow: 1px 1px 5px rgb(0, 255, 98);
+}
+
+input:focus:invalid{
+     box-shadow: 1px 1px 5px rgb(252, 127, 93);
+
+
+
+}
 
 #submitbtn {
     margin-top: 1rem;
@@ -422,10 +440,63 @@ input:focus{
     display: flex;
     flex-direction: column;
     gap: 1rem;
-   
-    
-    
+
+
+    animation: fadeinup 1s linear normal 0s ;
+ 
 }
+
+
+@keyframes fadeinup {
+
+
+    0% {
+
+        transform: translateY(40px);
+        opacity: 0;
+    }
+
+    25% {
+
+        transform: translateY(30px);
+        opacity: 0.2;
+    }
+
+    50% {
+
+        transform: translateY(20px);
+        opacity: 0.5;
+    }
+
+    75% {
+
+        transform: translateY(10px);
+        opacity: 0.8;
+    }
+
+
+    100% {
+
+        transform: translateY(0px);
+        opacity:1;
+    }
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
 
 .features h2{
     
