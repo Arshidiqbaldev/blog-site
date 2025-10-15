@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .main {
+        display: flex;
+        height: 100vh;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .wrapper {
+        height: 400px;
+        width: 400px;
+        display: flex;
+        gap: 2px;
+      }
+
+      .anime-card {
+        height: 100%;
+        width: 100%;
+        flex: 1;
+        cursor: pointer;
+         transition: all 0.4s ease-in-out ;
+
+      }
+
+      .anime-card img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        border-radius: 10px;
+        filter: grayscale(1);
+        transition: 0.5s ease-in-out ;
+      }
+
+      .no1{
+
+        animation: widthis 0.5s ease-out 0s normal;
+        animation-fill-mode:backwards;
+        
+        
+      }
+
+      @keyframes widthis {
+
+        from{
+            
+            flex:4;
+        }
+
+        to {
+            
+            flex:1;
+            
+        }
+
+
+
+      }
+
+
+
+
+
+
+.anime-card:hover{
+
+
+    flex:4;
+   
+}
+
+
+.anime-card:hover img {
+    filter: grayscale(0);
+}
+
+
+
+
+
+
+    </style>
+  </head>
+  <body>
+
+    <div class="main">
+    <div class="wrapper">
+      <div class="anime-card no1">
+        <img src="imgs/dentistas_espana-1024x684.jpg" alt="" />
+      </div>
+      <div class="anime-card">
+        <img src="imgs/dentistas_espana-1024x684.jpg" alt="" />
+      </div>
+      <div class="anime-card">
+        <img src="imgs/dentistas_espana-1024x684.jpg" alt="" />
+      </div>
+      <div class="anime-card">
+        <img src="imgs/dentistas_espana-1024x684.jpg" alt="" />
+      </div>
+    </div>
+    </div>
+  </body>
+</html>
