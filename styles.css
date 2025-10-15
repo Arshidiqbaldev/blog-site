@@ -134,14 +134,14 @@ li {
     display: flex;
     flex-direction: row;
     list-style-type: none;
-    gap: var(--gap);
+    gap:0.5rem;
 }
 
 header a {
     display: inline-block;
     text-decoration: none;
     color: var(--white);
-    padding: 0.5rem 1rem;
+    padding: 0.4rem 0.5rem;
     background: #000;
     border: var(--border);
     border-radius: var(--border-radius);
