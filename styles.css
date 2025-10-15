@@ -50,6 +50,7 @@
 body {
     font-family: "DM Sans", sans-serif;
     background: #000;
+    overflow-x: hidden;
 }
 
 main {
@@ -120,7 +121,7 @@ h4 {
 .header {
     display: flex;
     flex-direction: row;
-    padding: 1rem 0rem;
+    padding: 1rem 0.5rem;
     justify-content: center;
     align-items: center;
     border-bottom: var(--border);
