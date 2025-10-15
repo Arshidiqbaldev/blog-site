@@ -369,6 +369,7 @@ input:focus{
     background: var(--black);
     border: var(--border);
     border-radius: var(--border-radius);
+    resize: vertical;
 }
 
 .message:focus{
