@@ -134,7 +134,7 @@ li {
     display: flex;
     flex-direction: row;
     list-style-type: none;
-    gap:0.5rem;
+    gap: 0.5rem;
 }
 
 header a {
@@ -165,14 +165,14 @@ header a:hover {
 
 
 .hero {
-   
+
     width: 90%;
     text-align: center;
     background: var(--black);
     display: flex;
     flex-direction: column;
     gap: var(--gap);
-    padding:var(--padding);
+    padding: var(--padding);
     justify-content: center;
     align-items: center;
 
@@ -228,7 +228,7 @@ header a:hover {
 }
 
 .postloop {
-    
+
     overflow: hidden;
     display: flex;
     flex-direction: column;
@@ -301,90 +301,150 @@ header a:hover {
     width: 100%;
 }
 
+.team{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    gap: var(--gap-2);
+}
+
+.team h2 {
+    padding-bottom: 2rem;
+}
 
 
-.mainform{
+  .gallery {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .wrapper {
+        height: 300px;
+        width: 300px;
+        display: flex;
+        gap: 2px;
+      }
+
+      .anime-card {
+        height: 100%;
+        width: 100%;
+        flex: 1;
+        cursor: pointer;
+         transition: all 0.5s ease-in-out ;
+
+      }
+
+      .anime-card .teammember {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        border-radius: 10px;
+        border: var(--border);
+        filter: grayscale(1);
+        transition: 0.5s ease-in-out ;
+      }
+
+.anime-card:hover{
+
+
+    flex:4;
    
+}
+
+
+.anime-card:hover .teammember {
+    filter: grayscale(0);
+}
+
+
+.mainform {
+
     padding-top: 1rem;
 
-    width:100%;
-    display:flex;
+    width: 100%;
+    display: flex;
     flex-direction: column;
-    gap:8px;
+    gap: 8px;
 }
 
 
 
-.contact{
-     width: 90%;
-    text-align:start;
+.contact {
+    width: 90%;
+    text-align: start;
     background: var(--black);
     display: flex;
     flex-direction: column;
     gap: var(--gap);
     padding: var(--padding);
     justify-content: start;
-    align-items:start;
+    align-items: start;
 
 }
 
 
 
-label, input, textarea, input::placeholder {
+label,
+input,
+textarea,
+input::placeholder {
     font-size: 14px;
     font-family: var(--font);
     text-transform: capitalize;
-    color:var(--white-2);
+    color: var(--white-2);
     padding: 0.5rem;
-   
+
 }
 
-label{
-    font-size:var(--body-text);
+label {
+    font-size: var(--body-text);
     text-transform: capitalize;
-    color:var(--white);
-   
+    color: var(--white);
+
 }
 
 
 
-input{
-    padding:1rem 0.5rem;
+input {
+    padding: 1rem 0.5rem;
     outline: none;
     background: #000;
-     transition: all 0.5s ease;
-      border:var(--border);
-      border-radius: var(--border-radius);
+    transition: all 0.5s ease;
+    border: var(--border);
+    border-radius: var(--border-radius);
 }
 
-input:focus{
+input:focus {
     border-color: rgb(129, 129, 129);
 
 
-    
+
     /* border-color: royalblue; */
 }
 
-.message{
+.message {
     background: var(--black);
     border: var(--border);
     border-radius: var(--border-radius);
     resize: vertical;
 }
 
-.message:focus{
+.message:focus {
 
     border-color: rgb(129, 129, 129);
 
 }
 
 
-input:focus:valid{
+input:focus:valid {
     box-shadow: 1px 1px 5px rgb(0, 255, 98);
 }
 
-input:focus:invalid{
-     box-shadow: 1px 1px 5px rgb(252, 127, 93);
+input:focus:invalid {
+    box-shadow: 1px 1px 5px rgb(252, 127, 93);
 
 
 
@@ -393,27 +453,27 @@ input:focus:invalid{
 #submitbtn {
     margin-top: 1rem;
     display: inline-block;
-  width: 50%;
-  padding: 12px 20px;
-  background:var(--brand);
-  color: rgb(0, 0, 0);
-  border:1px solid grey;
-  font-family: var(--font);
-  font-size: 16px;
-  font-weight: 600;
-  cursor: pointer;
-  transition:all 0.4s ease-in-out  0s;
+    width: 50%;
+    padding: 12px 20px;
+    background: var(--brand);
+    color: rgb(0, 0, 0);
+    border: 1px solid grey;
+    font-family: var(--font);
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.4s ease-in-out 0s;
 
 }
 
-#submitbtn:hover{
+#submitbtn:hover {
     transform: translateX(5px);
 }
 
-.footer{
+.footer {
 
     border-top: var(--border);
-    padding:1rem 0rem;
+    padding: 1rem 0rem;
     width: 100%;
     display: flex;
     align-items: center;
@@ -421,19 +481,19 @@ input:focus:invalid{
 }
 
 
-.counter{
+.counter {
 
     padding-top: 1rem;
     width: 90%;
     display: grid;
-    grid-template-rows: repeat(3,1fr);
-    grid-template-columns: repeat(1,1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(1, 1fr);
     gap: var(--gap);
-    
+
 
 }
 
-.features{
+.features {
 
     border: var(--border);
     padding: 2rem 1rem;
@@ -443,8 +503,8 @@ input:focus:invalid{
     gap: 1rem;
 
 
-    animation: fadeinup 1s linear normal 0s ;
- 
+    animation: fadeinup 1s linear normal 0s;
+
 }
 
 
@@ -479,31 +539,19 @@ input:focus:invalid{
     100% {
 
         transform: translateY(0px);
-        opacity:1;
+        opacity: 1;
     }
 
-
-
-
-
-
-
 }
 
 
 
+.features h2 {
 
-
-
-
-
-
-
-.features h2{
-    
-color: var(--brand);
+    color: var(--brand);
 
 }
+
 @media (min-width:768px) {
 
 
@@ -514,11 +562,6 @@ color: var(--brand);
 
     }
 }
-
-
-
-
-
 
 
 
@@ -581,30 +624,42 @@ color: var(--brand);
     }
 
 
-    .contact{
-     width: 100%;
+    .contact {
+        width: 100%;
     }
 
-    .mainform{
-        width:70%
+    .mainform {
+        width: 70%
     }
 
-    #submitbtn{
+    #submitbtn {
         width: 20%;
     }
 
-.counter{
+    .counter {
 
-    padding-top: 1rem;
-    width: 90%;
-    display: grid;
-    grid-template-rows: repeat(1,1fr);
-    grid-template-columns: repeat(3,1fr);
-    gap: var(--gap);
-    
+        padding-top: 1rem;
+        width:100%;
+        display: grid;
+        grid-template-rows: repeat(1, 1fr);
+        grid-template-columns: repeat(3, 1fr);
+        gap: var(--gap);
 
-}
 
+    }
+
+    .team{
+        width: 100%;
+    }
+
+    .wrapper{
+
+        width: 600px;
+        height: 400px;
+
+
+
+    }
 
 
 }
